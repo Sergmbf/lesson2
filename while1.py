@@ -9,13 +9,15 @@
    
 """
 
-
-def ask_user():
+answer = str ('NO')
+def ask_user(answer):
     """
     Замените pass на ваш код
     """
-    pass
+    while answer != 'Хорошо' :
+      print(" Как дела? ")
+      answer = str(input())
 
-    
-if __name__ == "__main__":
-    ask_user()
+print ( ask_user(answer), ' Молодец! ')
+
+

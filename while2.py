@@ -15,11 +15,16 @@
     
 """
 
-def ask_user():
+
+  
+
+question = str ('NO')
+def ask_user_dict(question):
     """
     Замените pass на ваш код
     """
-    pass
-    
-if __name__ == "__main__":
-    ask_user()
+    while question != 'Как дела?' or  question != 'Что делаешь?' :
+      print(" Введите вопрос? ")
+      question = str(input())
+
+print ( ask_user_dict(question), ' Молодец! ') 

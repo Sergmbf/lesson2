@@ -14,13 +14,27 @@
   и выводя на экран результаты
 
 """
+print("Введите строку 1")
+string1 = str(input())
+print("Введите строку 2")
+string2 = str(input())
 
-def main():
+def main_detection(string1,string2):
+    
+
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
-    
-if __name__ == "__main__":
-    main()
+    if type(string1) != str or type(string2) != str:
+      return '0'
+    elif string1 == string2:
+      return '1'
+    elif string1 != string2 and len(string1) > len(string2):
+      return '2'
+    elif string1 != string2 and string2 == 'learn':
+      return '3'
+    else:
+      return 'ПРОГРАММА ЗАВЕРШЕНА'
+  
+print(' Ответ функции = ', main_detection(string1,string2))
