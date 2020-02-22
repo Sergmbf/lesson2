@@ -14,18 +14,17 @@
     Программа: Программирую
     
 """
+print(" Здравствуйте! ")
+dict_for_meeting = {'Как дела?':'Хорошо!','Что делаешь?':'Программирую!','Еще вопросы есть?':'Нет'}
 
-dict1 = {'Как дела?':'Хорошо!','Что делаешь?':'Программирую!','Еще вопросы есть?':'Нет'}
-
-def ask_user_dict(question):
-    # print(" Введите вопрос? ")      
-    
-    
-    while True :
-        dict1 = dict()
-        question = input('Введите вопрос?')
-        if dict1.has_key(question) == True: 
-          print(dict1['question'])
-        else:
-          print('Вы ошиблись')
+def ask_user_dict(dict_for_meeting):
+  print(" первая точка ")      
+  while True:
+  # dict1 = dict()
+    print(" вторая  точка ")
+    question = input('Введите вопрос?')
+    if dict_for_meeting.has_key(question): 
+      print(dict_for_meeting['question'])
+    else:
+        print('Неправильный вопрос')
     
