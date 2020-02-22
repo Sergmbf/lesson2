@@ -28,16 +28,17 @@ print(type(dict_for_meeting))
 
 
 def ask_user_dict():
- 
-  print(" первая точка ")      
+  
+  # print(" первая точка ")      
   while True:
-    print(" вторая  точка ")
+    # print(" вторая  точка ")
     print('Введите вопрос?')
     question = str(input())
-    if question in dict_for_meeting == True: 
+    if question in dict_for_meeting != True: 
+      # print('третья точка')
       print(dict_for_meeting[question])
     else:
       print('Неправильный вопрос')
   print(dict_for_meeting['question'])
-
+print(ask_user_dict())
 
