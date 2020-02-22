@@ -15,16 +15,23 @@
     
 """
 print(" Здравствуйте! ")
-dict_for_meeting = {'Как дела?':'Хорошо!','Что делаешь?':'Программирую!','Еще вопросы есть?':'Нет'}
+dict_for_meeting = {
+  'Как дела?':'Хорошо!',
+  'Что делаешь?':'Программирую!',
+  'Еще вопросы есть?':'Нет'
+  }
+print(type(dict_for_meeting))
 
-def ask_user_dict(dict_for_meeting):
+
+def ask_user_dict():
+ 
   print(" первая точка ")      
   while True:
-  # dict1 = dict()
     print(" вторая  точка ")
-    question = input('Введите вопрос?')
-    if dict_for_meeting.has_key(question): 
-      print(dict_for_meeting['question'])
+    print('Введите вопрос?')
+    question = str(input())
+    if question in dict_for_meeting == True: 
+      print(dict_for_meeting[question])
     else:
         print('Неправильный вопрос')
     

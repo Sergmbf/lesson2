@@ -9,7 +9,7 @@
    
 """
 
-answer = str ('NO')
+answer = str ('Другое')
 def ask_user(answer):
     """
     Замените pass на ваш код
@@ -18,6 +18,6 @@ def ask_user(answer):
       print(" Как дела? ")
       answer = str(input())
 
-print ( ask_user(answer), ' Молодец! ')
+print ( ask_user(answer), answer , ' Молодец! ')
 
 
