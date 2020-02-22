@@ -14,21 +14,18 @@
     Программа: Программирую
     
 """
-question = str ('k') 
-answer = str ('s')
-dict1 = {question:answer}
-# default = None
-print (type(dict1))
-dict1 = {'Как дела?':'Хорошо!','Что делаешь?':'Программирую!','Еще вопросы есть?':'Нет'}
-# print(" Введите вопрос? ")
-# question = str(input())
-def ask_user_dict(dict1):
-question = 'k'
-  # answer = str ('s')
-  print(type(question),' question ')
-while dict1.question(question) != True:
-  print(" Введите вопрос? ")      
-  question = str(input())
-else:
-  print ('условие while не сработало')
 
+dict1 = {'Как дела?':'Хорошо!','Что делаешь?':'Программирую!','Еще вопросы есть?':'Нет'}
+
+def ask_user_dict(question):
+    # print(" Введите вопрос? ")      
+    
+    
+    while True :
+        dict1 = dict()
+        question = input('Введите вопрос?')
+        if dict1.has_key(question) == True: 
+          print(dict1['question'])
+        else:
+          print('Вы ошиблись')
+    
