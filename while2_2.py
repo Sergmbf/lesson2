@@ -23,7 +23,7 @@ dict1 = {'Как дела?':'Хорошо!','Что делаешь?':'Прогр
 # print(" Введите вопрос? ")
 # question = str(input())
 def ask_user_dict(dict1):
-question = 'k'
+  question = ''
   # answer = str ('s')
   print(type(question),' question ')
 while dict1.question(question) != True:
