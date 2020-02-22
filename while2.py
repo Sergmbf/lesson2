@@ -30,5 +30,7 @@ def ask_user_dict(dict_for_meeting):
     if dict_for_meeting.has_key(question): 
       print(dict_for_meeting['question'])
     else:
-        print('Неправильный вопрос')
-    
+      print('Неправильный вопрос')
+  print(dict_for_meeting['question'])
+
+
