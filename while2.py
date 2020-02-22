@@ -12,8 +12,12 @@
 
     Пользователь: Что делаешь?
     Программа: Программирую
-    
-"""
+
+    """
+
+
+
+
 print(" Здравствуйте! ")
 dict_for_meeting = {
   'Как дела?':'Хорошо!',
@@ -33,5 +37,7 @@ def ask_user_dict():
     if question in dict_for_meeting == True: 
       print(dict_for_meeting[question])
     else:
-        print('Неправильный вопрос')
-    
+      print('Неправильный вопрос')
+  print(dict_for_meeting['question'])
+
+
