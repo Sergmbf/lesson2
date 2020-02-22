@@ -16,9 +16,6 @@
     """
 
 
-
-
-print(" Здравствуйте! ")
 dict_for_meeting = {
   'Как дела?':'Хорошо!',
   'Что делаешь?':'Программирую!',
@@ -41,4 +38,7 @@ def ask_user_dict():
       print('Неправильный вопрос')
   print(dict_for_meeting['question'])
 print(ask_user_dict())
+
+
+
 
