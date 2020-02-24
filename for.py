@@ -17,22 +17,27 @@ list_scores_school = [
   {'school_class':'5a','scores':[5,5,5,5,4,4,3]}
   ]
 
-def scores_school():
+
+
+def scores_school_new():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    # average_score_class('school_class') = dict()
+    average_scores_school = 0
+    sum_scores = 0
     sum_scores_school = 0
-    for j in ['school_class']:
-        sum_scores_school += sum_scores_school
-        sum_scores_class('school_class') = 0 
-        for i in ['scores']:
-            sum_scores_class('school_class') += sum_scores_class('school_class')
-        average_scores_class('school_class') = sum_scores_class('school_class')/ int(len('scores'))
-        return average_scores_class('school_class')
-    average_scores_school = sum_scores_school/ int(len('school_class'))
-    return average_scores_school
-
-print('average_score_class =', average_score_class('4a'))
-print('average_scores_school =', average_scores_school )
+   
+    for school_class in list_scores_school:
+      for score in ['scores']:
+        sum_scores += score  
+      return sum_scores
+    average_scores = sum_scores/ (len('scores'))
+    print(school_class, average_scores )
+    sum_scores_school += average_scores
+    return sum_scores_school
+  
+  
+    average_scores_school = sum_scores_school/len(list_scores_school)
+    print('average_scores_school=', average_scores_school)  
+    print (scores_school_new)
