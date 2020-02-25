@@ -24,17 +24,14 @@ def scores_school_new():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    average_scores_school = 0
-    sum_scores = 0
-    sum_scores_school = 0
+    #average_scores_school = 0
+    
+    #sum_scores_school = 0
    
     for school_class in list_scores_school:
-      for score in ['scores']:
-        sum_scores += score  
-      return sum_scores
-    average_scores = sum_scores/ (len('scores'))
-    print(school_class, average_scores )
-    sum_scores_school += average_scores
+      average_scores[school_class] = sum(school_class[scores])/len(school_class[scores])
+      print(school_class, average_scores[school_class])
+      sum_scores_school += average_scores[school_class]
     return sum_scores_school
   
   
